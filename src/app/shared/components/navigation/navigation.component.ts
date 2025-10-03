@@ -72,12 +72,22 @@ import { RegisterButton } from '@shared/components/register-button/register-butt
 
       <!-- Mobile Menu -->
       <div id="mobile-menu"
-           class="lg:hidden fixed inset-0 top-16 bg-white z-40 transform transition-transform duration-300 shadow-lg"
+           class="lg:hidden fixed inset-0 bg-white z-40 transform transition-transform duration-300 shadow-lg"
            [class.translate-x-0]="isMenuOpen"
            [class.translate-x-full]="!isMenuOpen"
            [attr.aria-hidden]="!isMenuOpen">
 
         <div class="px-6 py-6 space-y-4">
+          <div class="flex justify-end mb-4">
+            <button (click)="closeMenu()"
+                    class="text-black hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md p-2 hover:bg-gray-50 transition-colors duration-200"
+                    aria-label="Cerrar menú">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+
           <ul class="space-y-2" role="menu">
             @for(item of navigationItems; track item.id) {
               <li role="none">

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Firebase Studio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FFA000",
+                        "background-light": "#FFFFFF",
+                        "background-dark": "#000000",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        .gradient-blur {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 160, 0, 0.3) 0%, rgba(255, 160, 0, 0) 70%);
+            filter: blur(100px);
+            z-index: -1;
+            bottom: -250px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+    <div class="min-h-screen flex flex-col relative overflow-hidden">
+        <header class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto flex justify-between items-center py-6">
+                <div class="flex items-center space-x-4">
+                    <img alt="Firebase Studio Logo" class="h-8"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIdeN7DbBrkGWHqdOOJLnFO81fYJW6oVQ29LIgNqPmolvsNzxFcaPCHlx5_XVBh4mojWbVVI5PwW2S2nL1ufnjdQlCtPAZ69OboWUEG4ik1EWTLPGCa157kDwMVGoOlDFuLUKHewJOdxoZM_-vHz1C7HeFdrZV7bH3phnYlcORznYOF8Wvi2zBXoPI2u4wSvDwmit_8tps6_agjCyW1pIrUi39Qko3F2p1_B0VYy6b_-GBWGgc8GVaBLFXYJip0CuBBGc03wGv9gdC" />
+                    <span class="text-xl font-bold text-gray-900 dark:text-white">Firebase Studio</span>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a class="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                        href="#">Docs</a>
+                    <a class="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                        href="#">Support</a>
+                </nav>
+                <a class="bg-primary hover:bg-orange-500 text-black font-bold py-2 px-4 rounded-full transition-colors"
+                    href="#">
+                    Get Started
+                </a>
+            </div>
+        </header>
+        <main class="flex-grow flex items-center justify-center text-center px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl">
+                <div class="mb-4 text-lg font-medium text-primary">October 26-27, 2025</div>
+                <h1 class="text-5xl sm:text-7xl lg:text-8xl font-black text-gray-900 dark:text-white leading-tight">
+                    The full
+                    <span
+                        class="inline-flex items-center justify-center bg-fuchsia-400 w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-2xl mx-2 -mb-2">
+                        <svg class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-black" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 20l4-16m4 4l-4 4-4-4 4-4" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"></path>
+                        </svg>
+                    </span>
+                    stack <br class="hidden sm:inline" />AI workspace
+                </h1>
+                <p class="mt-8 max-w-2xl mx-auto text-lg text-gray-500 dark:text-gray-400">
+                    Join us for Devfest 2025! A two-day event filled with amazing sessions, workshops, and networking
+                    opportunities with the best in the industry.
+                </p>
+                <div class="mt-10">
+                    <a class="bg-primary hover:bg-orange-500 text-black font-bold py-3 px-6 rounded-full transition-colors text-lg"
+                        href="#">
+                        Register
+                    </a>
+                </div>
+            </div>
+        </main>
+        <div class="gradient-blur"></div>
+    </div>
+
+</body>
+
+</html>

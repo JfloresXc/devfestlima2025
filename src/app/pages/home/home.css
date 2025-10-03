@@ -1,0 +1,6 @@
+@reference "tailwindcss";
+
+:host {
+  @apply min-h-screen flex flex-col relative overflow-hidden;
+  background-color: var(--color-background-light);
+}

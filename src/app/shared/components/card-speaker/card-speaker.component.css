@@ -1,0 +1,7 @@
+@reference "tailwindcss";
+
+@media screen and (max-width: 1210px) {
+  article {
+    margin-right: 0;
+  }
+}

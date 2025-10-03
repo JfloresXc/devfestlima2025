@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&family=Roboto+Mono:wght@300&display=swap');
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+@theme {
+  --color-core-blue: #4285f4;
+  --color-core-green: #34a853;
+  --color-core-yellow: #f9ab00;
+  --color-core-red: #ea4335;
+  --color-halftone-blue: #57caff;
+  --color-halftone-green: #5cdb6d;
+  --color-halftone-yellow: #ffd427;
+  --color-halftone-red: #ff7daf;
+  --color-pastel-blue: #c3ecf6;
+  --color-pastel-green: #ccf6c5;
+  --color-pastel-yellow: #ffe7a5;
+  --color-pastel-red: #f8d8d8;
+  --color-white: #ffff;
+  --color-black: #1e1e1e;
+
+  --font-headline: "Google Sans", system-ui, sans-serif;
+  --font-subhead: "Roboto Mono", monospace;
+  --font-body: "Google Sans", system-ui, sans-serif;
+
+  --font-weight-headline: 700;
+  --font-weight-subhead: 300;
+  --font-weight-body: 400;
+
+  --width-min-page: 90rem;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-body);
+}
+
+.width-min-page{
+  width: 100%;
+  max-width: var(--width-min-page);
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .width-min-page {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .width-min-page {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+

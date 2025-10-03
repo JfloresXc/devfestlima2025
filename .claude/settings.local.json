@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for section in contact-section schedule-section sponsors-section venue-section)",
+      "Bash(do echo \"=== $section ===\")",
+      "Bash(cat:*)",
+      "Bash(done)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
